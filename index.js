@@ -27,14 +27,14 @@ async function main() {
         var bundle = process.env.bundle ? process.env.bundle : prompt("Enter bundle id (21 chars): ");
 
         while (bundle.length != 21) {
-            console.log("Length isn't 21!!!\n");
+            console.log("Read what i just said.\n");
             var bundle = prompt("Bundle id: ");
         }
     } else {
         var bundle = process.env.bundle ? process.env.bundle : prompt("Enter bundle id (23 chars): ");
 
         while (bundle.length != 23) {
-            console.log("Length isn't 23!!!\n");
+            console.log("Read what i just said.\n");
             var bundle = prompt("Bundle id: ");
         }
     }
@@ -42,7 +42,7 @@ async function main() {
     var base = process.env.url ? process.env.url : prompt("Enter URL (33 chars): ");
 
     while (base.length != 33) {
-        console.log("Length isn't 33!!!\n");
+        console.log("Read what i just said.\n");
         var base = prompt("Enter URL (33 chars): ");
     }
     var b64 = Buffer.from(base).toString('base64');
@@ -80,7 +80,7 @@ async function main() {
     
     await fs.promises.rm(dir, { recursive: true, force: true });
 
-    console.log("Done! Project by DimisAIO.be :)")
+    console.log("Done! Now go away.")
 }
 
 main(); // ok
